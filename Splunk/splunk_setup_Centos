@@ -1,0 +1,460 @@
+    1  systemctl enable cloud-init
+    2  systemctl enable cloud-init-local
+    3  rpm -i splunk-7.1.2-a0c72a66db66-linux-2.6-x86_64.rpm
+    4  /opt/splunk/bin/./splunk start
+    5  history
+    6  firewall-cmd --add-port=8000/tcp --permanent
+    7  ls -ltr
+    8  pwd
+    9  date
+   10  crontab -e
+   11  pwd
+   12  crontab -e
+   13  crontab -l
+   14  date
+   15  ps -ef | grep splunk
+   16  history
+   17  vi commandToStartSplunkServer
+   18  vi startSplunk.sh
+   19  ls -ltr
+   20  chmod 777 startSplunk.sh 
+   21  ls -ltr
+   22  date
+   23  crontab -l
+   24  ls -ltr
+   25  ping -i 5  52.49.107.59 >> /home/user/ping3.txt
+   26  ls -ltr
+   27  cat ping3.txt 
+   28  ls -ltr
+   29  pwd
+   30  date
+   31  crontab -l
+   32  ls -ltr
+   33  crontab -e
+   34  crontab -l
+   35  date
+   36  ls -ltr
+   37  date
+   38  top
+   39  date
+   40  ls -ltr
+   41  exit
+   42   ping -i 5 -s 4000 52.49.107.59 >>pingData &
+   43   ping -i 5  52.49.107.59 >>pingData &
+   44  ping -i 5 -s 65507 52.49.107.59 >>pingData
+   45  ping -i 5 -s 65507 52.49.107.59 >>pingData &
+   46  /opt/splunk/bin/./splunk start
+   47  ps -ef | grep ping
+   48  crontab -l
+   49  sudo su
+   50  exit
+   51  history
+   52   ping -i 5 -s 4000 52.49.107.59 >>pingData &
+   53   ping -i 5  52.49.107.59 >>pingData &
+   54  ping -i 5 -s 65507 52.49.107.59 >>pingData &
+   55  ls -ltr
+   56  ps -ef | grep ping
+   57  history
+   58  ping -i 5 -s 4000 52.14.60.145 >>pingData &
+   59  ping -i 5 -s 54000 52.14.60.145 >>pingData &
+   60  ping -i 5  52.14.60.145 >>pingData &
+   61  cd /var
+   62  cd log
+   63  ls -ltr
+   64  tail -f pingData 
+   65  hist
+   66  history
+   67  ping -i 5  52.14.60.145
+   68  ping   52.14.60.145
+   69  ping ec2-52-14-60-145.us-east-2.compute.amazonaws.com
+   70  ping www.google.com
+   71  ping www.idbi.com
+   72  ping www.google.com
+   73  ping 18.216.43.64
+   74  ps -ef | grep ping
+   75  kill -9 13577 13588 18472
+   76  ps -ef | grep ping
+   77  kill -9 13601
+   78  ps -ef | grep ping
+   79  history
+   80  ping -i 5 -s 4000 18.216.43.64 >>pingData &
+   81  ping -i 5 -s 54000 18.216.43.64 >>pingData &
+   82  ping -i 5  18.216.43.64 >>pingData &
+   83  kill -9 18564
+   84  ping -i 5 -s 5000 18.216.43.64 >>pingData &
+   85  kill -9 18573
+   86  ping -i 5 -s 128 18.216.43.64 >>pingData &
+   87  date
+   88  history
+   89  /opt/splunk/bin/./splunk start
+   90  history
+   91   ping -i 5  52.49.107.59 >>pingData &
+   92  ping -i 5 -s 65507 52.49.107.59 >>pingData
+   93  ps -ef | grep ping
+   94  ping -i 5 -s 65507 52.49.107.59 >>pingData
+   95  history
+   96   ping -i 5 -s 4000 52.49.107.59 >>pingData &
+   97  ping -i 5 -s 65507 52.49.107.59 >>pingData &
+   98  ps -ef | grep ping
+   99  history | grep ing
+  100  ping -i 5 -s 54000 18.216.43.64 >>pingData &
+  101  ping -i 5 -s 5000 18.216.43.64 >>pingData &
+  102  ping -i 5 -s 128 18.216.43.64 >>pingData &
+  103  cd /var
+  104  cd tmp
+  105  ls -ltr
+  106  cd ~
+  107  ls -ltr
+  108  pwd
+  109  cd /home
+  110  cd user
+  111  ls -ltr
+  112  vi splunkScript.sh
+  113  cat commandToStartSplunkServer
+  114  vi splunkScript.sh 
+  115  chmod +x splunkScript.sh 
+  116  ls -ltr
+  117  ps -ef | grep ping
+  118  history
+  119  cd /var/log
+  120  ls
+  121  ls -ltr
+  122  ls -tr
+  123  ls -ltr
+  124  pwd
+  125  cd ~
+  126  ls -ltr
+  127  cd /home
+  128  cd user
+  129  ls -ltr
+  130  tail -f pingData 
+  131  ls -ltr
+  132  history 
+  133  hisotry | grep ping
+  134  history | grep ping
+  135  vi splunkScript.sh 
+  136  ls -ltr
+  137  cat 
+  138  cat commandToStartSplunkServer 
+  139  vi splunkScript.sh 
+  140  vi vi /etc/systemd/system/splunkS.service
+  141  vi /etc/systemd/system/splunkS.service
+  142  vi vi /etc/systemd/system/splunkS.service
+  143  vi /etc/systemd/system/splunkS.service
+  144  systemctl enable splunkS.service
+  145  systemctl status splunk
+  146  systemctl status splunkS
+  147  history
+  148  ps -ef | grep splunk
+  149  systemctl status splunkS.service
+  150  systemctl enable splunkS.service
+  151  ps -ef | grep ping
+  152  systemctl start splunkS.service
+  153  ps -ef | grep splunk
+  154  systemctl status splunkS.service
+  155  history
+  156  sudo su
+  157  vi /etc/systemd/system/splunkS.service
+  158  systemctl start splunkS.service
+  159  systemctl daemon-reload
+  160  systemctl enable splunkS.service
+  161  systemctl start splunkS.service
+  162  ps -ef | grep -i splunk
+  163  systemctl status splunkS.service
+  164  systemctl status splunks.service
+  165  systemctl status splunkS.service
+  166  ls -ltr
+  167  cat commandToStartSplunkServer 
+  168   /opt/splunk/bin/./splunk start
+  169  ls -ltr
+  170  cat logFile 
+  171  sudo su
+  172  ls -ltr
+  173  history
+  174  ls
+  175  cat splunkScript.sh
+  176  cp splunkScript.sh ping1.sh
+  177  vi ping1.sh 
+  178  ls -ltr
+  179  ./ping1.sh
+  180  ls -ltr
+  181  tail -f pingData 
+  182  which splunk
+  183  cat commandToStartSplunkServer 
+  184  /opt/splunk/bin/./splunk enable boot-start
+  185  /opt/splunk/bin/./splunk enable boot-start -user user
+  186  history
+  187   systemctl disable splunkS.service
+  188  ps -ef | grep splunk
+  189  /opt/splunk/bin/./splunk enable boot-start -user user
+  190  ps -ef | grep splunk
+  191  ls -ltr
+  192  vi splunkScript.sh
+  193  echo abc
+  194  echo "abc"
+  195  cat splunkScript.sh 
+  196  history | grep sh
+  197  sudo su
+  198  history | grep splunk
+  199  ps -ef | grep -i splunk
+  200  systemctl enable splunkS.service
+  201  history | grep reload
+  202   systemctl daemon-reload
+  203  uptime
+  204  ls -ltr
+  205  cat logFile 
+  206  /opt/splunk/bin/./splunk start
+  207  sudo su
+  208  /opt/splunk/bin/./splunk start
+  209  ps -ef | grep splunk
+  210  /opt/splunk/bin/./splunk start
+  211  ls -ltr
+  212  vi startSplunk.sh
+  213  vi splunkScript.sh
+  214  history | grep enable
+  215  systemctl disable splunkS.service
+  216  ls
+  217  history
+  218   /opt/splunk/bin/./splunk status
+  219   /opt/splunk/bin/./splunk start
+  220   /opt/splunk/bin/./splunk restart
+  221   /opt/splunk/bin/./splunk stop
+  222  history | grep boot
+  223  /opt/splunk/bin/./splunk disable boot-start
+  224  /opt/splunk/bin/./splunk disable boot-start -user user
+  225  ls -ltr
+  226  cat commandToStartSplunkServer 
+  227   /opt/splunk/bin/./splunk start
+  228  sudo su -k /opt/splunk/bin/./splunk start
+  229  /opt/splunk/bin/./splunk start
+  230  ls -ltr /opt/splunk/var/run/splunk/
+  231  cat splunkd.pid
+  232  date
+  233  sudo su
+  234  /opt/splunk/bin/./splunk start
+  235  who am i
+  236  home
+  237  cd ~
+  238  pwd
+  239  cd /opt/splunk/var/lib/
+  240  ls
+  241  cd splunk/
+  242  ls
+  243  ls -ltr
+  244  /opt/splunk/bin/./splunk start
+  245  cd /opt/splunk/var/run/splunk/
+  246  ls -ltr
+  247  cat splunkd.pid
+  248  ps -ef | grep 5634
+  249  ps -ef | grep -i splunk
+  250  rm -rf splunkd.pid
+  251  ls -ltr
+  252  /opt/splunk/bin/./splunk start
+  253  ls -ltr
+  254  history 
+  255  cd /opt/splunk/var/run/splunk/
+  256  ls -ltr
+  257  date
+  258  ps -ef | grep -i splunk
+  259  cd ~
+  260  ls
+  261  cd /hom
+  262  cd /home
+  263  cd user
+  264  cat commandToStartSplunkServer 
+  265  /opt/splunk/bin/./splunk start
+  266  killall splunk && killall mongod
+  267  cd /opt/splunk
+  268  ls -ltr
+  269  cd bin
+  270  ls -ltr
+  271  cd ..
+  272  chown -R splunk:splunk /opt/splunk
+  273  sudo su - splunk
+  274  history | grep user
+  275  /opt/splunk/bin/./splunk disable boot-start -user user
+  276  /opt/splunk/bin/./splunk status boot-start -user user
+  277   /opt/splunk/bin/./splunk start
+  278  chown -R root:root /opt/splunk
+  279  /opt/splunk/bin/splunk start
+  280  cd /etc
+  281  ls -ltr
+  282  cd splunk
+  283  cd users
+  284  cd /opt
+  285  ls
+  286  cd splunk/
+  287  ls
+  288  cd etc
+  289  ls
+  290  cd users
+  291  ls
+  292  admin
+  293  cd admin
+  294  ls
+  295  cd search/
+  296  ls
+  297  cd history
+  298  ls -ltr
+  299  cat mreddy1c.mylabserver.com.csv 
+  300  ls -ltr
+  301  pwd
+  302  cp /opt/splunk/etc/users/admin/search/history/mreddy1c.mylabserver.com.csv /tmp
+  303  cd /tmp
+  304  ls -ltr
+  305  git clone https://github.com/munireddy/Webapp1.git
+  306  yum install git
+  307  ls
+  308  git clone https://github.com/munireddy/Webapp1.git
+  309  cd Webapp1/
+  310  ls -ltr
+  311  cp ../mreddy1c.mylabserver.com.csv .
+  312  ls -ltr
+  313  mv mreddy1c.mylabserver.com.csv splunkCommand
+  314  git add splunkCommand 
+  315  git commit -m "splunk commands added"
+  316  git push
+  317  history
+  318  rpm -i splunk-7.1.2-a0c72a66db66-linux-2.6-x86_64.rpm
+  319  cd ~
+  320  pwd
+  321  cd /home
+  322  cd user
+  323  rpm -i splunk-7.1.2-a0c72a66db66-linux-2.6-x86_64.rpm
+  324  rpm -q -a | grep -i splunk
+  325  rpm -e splunk-7.1.2-a0c72a66db66.x86_64
+  326  ls -ltr /opt/splunk
+  327  cd ..
+  328  chown -R splunk:splunk /opt/splunk
+  329  rpm -e splunk-7.1.2-a0c72a66db66.x86_64
+  330  cd /opt
+  331  cd splunk
+  332  ls -ltr
+  333  cd ..
+  334  rm -rf splunk
+  335  ls -ltr
+  336  cd /etc
+  337  ls
+  338  cd splunk
+  339  cd /home
+  340  cd user
+  341  rpm -i splunk-7.1.2-a0c72a66db66-linux-2.6-x86_64.rpm
+  342  history
+  343  /opt/splunk/bin/./splunk start
+  344  cd /opt
+  345  ls
+  346  cd splunk/
+  347  ls -ltr
+  348  cd etc
+  349  ls
+  350  cd users
+  351  ls
+  352  cd asmin
+  353  cd admin
+  354  ls -ltr
+  355  cd search
+  356  ls -ltr
+  357  cd history
+  358  ls -ltr
+  359  cat mreddy1c.mylabserver.com.csv
+  360  mv mreddy1c.mylabserver.com.csv mreddy1c.mylabserver.com.csv.1
+  361  cp /tmp/mreddy1c.mylabserver.com.csv .
+  362  ls -ltr
+  363  cd /home
+  364  cd user
+  365  ls -ltr
+  366  cat startSplunk.sh
+  367  cat splunkScript.sh
+  368  vi splunkScript.sh
+  369  ./splunkScript.sh 
+  370  ls -ltr
+  371  l s-ltr
+  372  tail -f pingData
+  373  sudo su - root
+  374  /opt/splunk/bin/./splunk start
+  375  history
+  376  history | grep ping
+  377  ping -i 5 -s 65507 52.49.107.59 >>pingData &&  ping -i 5 -s 4000 52.49.107.59 >>pingData &
+  378  ps -ef | grep ping
+  379  ping -i 5 -s 4000 52.49.107.59 >>pingData &
+  380  ping -i 5 -s 65507 52.49.107.59 >>pingData &
+  381  ping -i 5 -s 54000 18.216.43.64 >>pingData &
+  382  ping -i 5 -s 5000 18.216.43.64 >>pingData &
+  383  crontab -e
+  384  ping -i 5 -s 128 18.216.43.64 >>pingData &
+  385  ps -ef | grep ping
+  386  ping 18.223.108.87
+  387  ping -i 10 18.223.108.87
+  388  ls -ltr
+  389  date
+  390  history
+  391  ping -i 5 -s 4000 52.49.107.59 >>pingData &
+  392  ping -i 5 -s 65507 52.49.107.59 >>pingData &
+  393  ping -i 5 -s 54000 18.216.43.64 >>pingData &
+  394  ping -i 5 -s 5000 18.216.43.64 >>pingData &
+  395  ping -i 5 -s 128 18.216.43.64 >>pingData &
+  396  ping -i 5  52.49.107.59 >>pingData &
+  397  ps -ef | grep ping
+  398  ls -ltr
+  399  cat commandToStartSplunkServer
+  400  /opt/splunk/bin/./splunk start
+  401  ps -ef | grep splunk
+  402  vi /opt/splunk/lib/python2.7/site-packages/splunk/persistconn/appserver.py
+  403  ls -ltr
+  404  nslookup -l | grep 8089
+  405  ps -ef | grep splunk | grep \-p
+  406  ps -ef | grep splunk | grep /-p
+  407  ps -ef | grep splunk | grep -p
+  408  ps -ef | grep splunk | grep 9997
+  409  ps -ef | grep splunk | grep 8089
+  410  cd /opt
+  411  cd splunk/
+  412  cd bin
+  413  ls -ltr
+  414  ./splunk list forward-server
+  415  cat commandToStartSplunkServer
+  416  /opt/splunk/bin/./splunk start
+  417  history
+  418  /opt/splunk/bin/./splunk start
+  419  history | grep ping
+  420  ping 
+  421  [root@mreddy1c user]#
+  422  ping 3.14.29.15
+  423  nslookup -l
+  424  ping 18.217.219.130
+  425  ping 3.14.29.15
+  426  ping 18.217.219.130
+  427  history
+  428  /opt/splunk/bin/./splunk start
+  429  ls -ltr
+  430  date
+  431  history | grep ping
+  432  ping 18.217.219.130
+  433  ping 3.122.232.3
+  434  history
+  435  history | grep ping
+  436  ping -i 5 -s 54000 3.122.232.3  >>pingData &
+  437  ping -i 5 -s 5000 3.122.232.3  >>pingData &
+  438  ping -i 5 -s 128 3.122.232.3  >>pingData &
+  439  ls -ltr
+  440  history
+  441  /opt/splunk/bin/./splunk start
+  442  uname -a
+  443  cat /proc/meminfo
+  444  cat /proc/meminfo | grep -i total
+  445  cat /proc/cpuinfo | grep -i pros
+  446  cat /proc/cpuinfo | grep -i proc
+  447  history
+  448  /opt/splunk/bin/./splunk start
+  449  history
+  450  /opt/splunk/bin/./splunk start
+  451  curl http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance
+  452  history 
+  453  /opt/splunk/bin/./splunk start
+  454  find / -name splunkd
+  455  echo $PATH
+  456  PATH=$PATH:/opt/splunk/bin/
+  457  echo $PATH
+  458  which splunkd
+  459  history
+  460  history >/home/cloud_user/splunk_setup_Centos
