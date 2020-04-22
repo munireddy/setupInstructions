@@ -8,8 +8,6 @@ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add
 touch /tmp/file3
 sudo echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" >> /etc/apt/sources.list.d/elastic.list
 touch /tmp/file4
-sudo deb https://artifacts.elastic.co/packages/6.x/apt stable main
-touch /tmp/file5
 sudo apt update -y
 touch /tmp/file6
 sudo apt install elasticsearch kibana
