@@ -1,4 +1,5 @@
 Download (splunkforwarder-8.0.3-a6754d8441bf-linux-2.6-amd64.deb) and install SplunkUniversalforwarder
+sudo dpkg -i  splunkforwarder-8.0.3-a6754d8441bf-linux-2.6-amd64.deb
 cd /opt/splunkforwarder/bin
 sudo ./splunk start --accept-lecense
 sudo ./splunk add forward-server <<Ip Of Splunk INdexer:9997>> -auth <<Splunk Indexer UserID:Splunk Indexer Password>>
