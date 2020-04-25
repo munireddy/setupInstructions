@@ -3,3 +3,18 @@ sudo dpkg -i splunk-7.1.1-8f0ead9ec3db-linux-2.6-amd64.deb
 cd /opt/splunk/bin   # to confirm the splunk is installed properly
 sudo ./splunk start --accept-license --answer-yes --no-prompt --seed-passwd <<your Password>
 sudo ./splunk enable boot-start  # to start Splunk at boot time
+
+
+-----------------------------User Data that can used with AWS instance ---------------------------------------
+#!/bin/bash
+sudo apt update -y
+touch /tmp/file1
+wget https://download.splunk.com/products/splunk/releases/7.1.1/linux/splunk-7.1.1-8f0ead9ec3db-linux-2.6-amd64.deb
+touch /tmp/file2
+sudo dpkg -i splunk-7.1.1-8f0ead9ec3db-linux-2.6-amd64.deb
+touch /tmp/file3
+cd /opt/splunk/bin
+sudo ./splunk start --accept-license --answer-yes --no-prompt --seed-passwd xxxxxxxxxxxx
+touch /tmp/file4
+sudo /opt/splunk/bin/splunk enable boot-start
+touch /tmp/file5
