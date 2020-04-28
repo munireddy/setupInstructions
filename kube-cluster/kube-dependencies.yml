@@ -1,0 +1,21 @@
+- hosts: all
+  become: yes
+  tasks:
+   - name: install kubelet
+     apt:
+       name: kubelet
+       state: present
+
+   - name: install kubeadm
+     apt:
+       name: kubeadm
+       state: present
+
+- hosts: master
+  become: yes
+  tasks:
+   - name: install kubectl
+     apt:
+       name: kubectl=1.14.0-00
+       state: present
+       force: yes

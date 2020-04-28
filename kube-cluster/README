@@ -1,0 +1,14 @@
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+
+#Run this command form Kubernetes Master
+ubuntu@ip-172-31-1-42:~$ kubectl create deployment nginx --image=nginx
+deployment.apps/nginx created
+ubuntu@ip-172-31-1-42:~$ kubectl expose deploy nginx --port 80 --target-port 80 --type NodePort
+service/nginx exposed
+ubuntu@ip-172-31-1-42:~$ kubectl get services
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP        24m
+nginx        NodePort    10.104.208.29   <none>        80:32631/TCP   15s
+
+
+
