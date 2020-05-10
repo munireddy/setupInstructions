@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: czapp1-deploy
+spec:
+   replicas: 5
+   minReadySeconds: 10
+   strategy:
+      type: RollingUpdate
+      rollingUpdate:
+         maxUnavailable: 1
+         maxSurge: 1
+   selector:
+      matchLabels:
+         app: cz-sample
+   template:
+      metadata:
+         labels:
+            app: cz-sample
+      spec:
+         containers:
+           - name: czapp1-container
+             image: munireddy1/k8simage:v3
+             ports:
+             - containerPort: 8000
