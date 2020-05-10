@@ -1,0 +1,8 @@
+  460  k apply -f czdepV3.yml  --record                          #### Rollout a differnet version of app
+  461  k get pods                                                #### Check the number pods
+  462  k got deployments                                         #### Check the deployment
+  464  k rollout history deploy czapp1-deploy                    #### get the history opf deployments
+  467  k get rs                                                  #### get the replica sets
+  468  k rollout undo deployment czapp1-deploy --to-revision=2   #### rollback to previous verison 
+  469  k rollout status deployment czapp1-deploy                 #### check the rollback status
+
