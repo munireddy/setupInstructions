@@ -8,7 +8,7 @@ sudo apt install openjdk-8-jdk-headless -y
 # Get the keys for jenkins 
 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 
-sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update -y
 
 # Install Jenkins
