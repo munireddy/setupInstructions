@@ -1,0 +1,8 @@
+#!/bin/bash
+git clone https://github.com/munireddy/setupInstructions.git /home/ubuntu/t1
+touch /tmp/1
+cd /home/ubuntu/t1/Jenkins
+chmod 777 jenkins.sh
+touch /tmp/2
+./jenkins.sh
+touch /tmp/3
