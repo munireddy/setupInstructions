@@ -1,0 +1,38 @@
+Server SetUp:
+PreReq:
+    1. Spin a EC2 instance with a public IP address. This is needed as the Splunk Server needed to be accessed over internet. Also, this Public IP address is needed
+    for the the Splunkforwarder to send the logs form different instnaces.
+    2. Define a Security group which opens the following ports: 8000, 22, 443, 9997, 8065
+    3. Open ufw and add the above ports.
+    4. sudo ufw enable
+    5. sudo ufw allow 9997
+    6. 
+Server Steps:
+    1. Download splunk debian package with wget command :   wget -O splunk-8.0.5-a1a6394cc5ae-linux-2.6-amd64.deb 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=8.0.5&product=splunk&filename=splunk-8.0.5-xxxxxxxxxxxx-linux-2.6-amd64.deb&wget=true'
+    2. sudo dpkg -i splunk-8.0.5-a1a6394cc5ae-linux-2.6-amd64.deb
+    3. cd /opt/splunk/bin
+    4. sudo ./splunk enable boot-start
+    5. // accept the license agreement
+    6. // provide userid and password. 1. This information is needed for login to the splunk server. 2. For adding splunkforwarder to the server.
+    7. sudo systemctl start splunk
+    
+Forword SetUp:
+Prereq:
+    1. Spin a EC2 instance
+    2. Define a Security group which opens the following ports: 8000, 22, 443, 9997, 8065
+    
+Splunkforwarder Steps:
+    1. Download universal splunk forwarder with wget: wget -O splunkforwarder-8.0.5-a1a6394cc5ae-linux-2.6-amd64.deb 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=8.0.5&product=universalforwarder&filename=splunkforwarder-8.0.5-xxxxxxxxx-linux-2.6-amd64.deb&wget=true'
+    2. sudo dpkg -i splunkforwarder-8.0.5-a1a6394cc5ae-linux-2.6-amd64.deb
+    3. cd /opt/splunkforwarder/bin
+    4. sudo ./splunk enable boot-start
+    5. // Add this splunkforwarder to the splunk server
+    5. sudo ./splunk add forward-server <<IP Address>>:9997 -auth admin:<<Password>>
+    6. // Check if the splunkforwarder is added or not
+    7. sudo ./splunk list forward-server
+    7. // Add the directories to be monitored
+    8. sudo ./splunk add monitor <<directory>> -sourcetype <<name>>
+    9. // Restart the splunk daemon
+    10. sudo ./splunk restart
+    
+    
