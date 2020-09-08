@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: vzapp1-deploy
+spec:
+   replicas: 6
+   minReadySeconds: 10
+   strategy:
+      type: RollingUpdate
+      rollingUpdate:
+         maxUnavailable: 1
+         maxSurge: 1
+   selector:
+      matchLabels:
+         app: vz-sample
+   template:
+      metadata:
+         labels:
+            app: vz-sample
+      spec:
+         containers:
+           - name: vzapp1-container
+             image: munireddy1/k8simagenew:v3
+             ports:
+             - containerPort: 8000

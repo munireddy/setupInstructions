@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+   name: vz-rc
+spec:
+   replicas: 10
+   selector:
+      app: vz-sample
+   template:
+      metadata:
+         labels:
+            app: vz-sample
+      spec:        
+         containers:
+           - name: vz-container
+             image: munireddy1/k8simagenew:v1
+             ports:
+             - containerPort: 8000        
