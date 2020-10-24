@@ -1,76 +1,76 @@
 DevOps:
 -------
 
-An application running on two different computers need not ( Some times it may) behave the same way.
+An application running on two different computers need not ( Sometimes it may) behave the same way.
 
-Infrasture ( Operations Team) -- Aplciation ( Developement Team)
- Applciation runs on Infrastrucutre.
+Infrasture ( Operations Team) -- Application ( Development Team)
+The application runs on Infrastructure.
 
 To avoid the conflict between Ops and Dev team .. the concept of DevOps came. 
 
-With out DevOps .. Dev team gives you the application software. 
+Without DevOps .. the Dev team gives you the application software. 
 
-Wtihdevops .. Application is bundled with the infrastructure.. 
+With DevOps .. the Application is bundled with the infrastructure. 
 
-Computer + Applcaiton .. Cloud ..
+Computer + Application .. Cloud ..
 
-Code changes would happen in Git. Then the build process will build the applcaiot and place it in a VM or Docker. That is te distrobutable unit.
+Code changes would happen in Git. Then the build process will build the application and place it in a VM or Docker. That is the distributable unit.
 
  
 
-Machine -- The CPU, Memory , Network and OS.
+Machine -- The CPU, Memory, Network, and OS.
 
-Code is developed ... The  it is tested in Test environemnt ..  ----- > Porduction Environment, --Operations team ..
-                        Qa TESt -- Integration Envi --- PreProd   ---- Prod envi -- configuratoin changes .. applicaito nwill not work properly. 
-                        (Colleciton of mahcines -- Virtual Mchine / Phy Mach / Docker / Kubernetes)  -- It is not exactly the same mahcine you use in QA Test in other envirment ..  Machine 1 -- Inter -- Machine 2 -- PreProd -- Machine2 
-                        (Code or the aplicaiton which is deployed is same ) -- Configuration form one environ to other environ 
+Code is developed ... Then it is tested in Test environment ..  ----- > Production Environment, --Operations team.
+                        Qa TESt -- Integration Envi --- PreProd   ---- Prod env -- configuration changes .. application will not work properly. 
+                        (Collection of machines -- Virtual Machine / Phy Mach / Docker / Kubernetes)  -- It is not exactly the same machine you use in QA Test in other environments ..  Machine 1 -- Inter -- Machine 2 -- PreProd -- Machine2 
+                        (Code or the application which is deployed is the same ) -- Configuration from one environment to other environments. 
 
-Linux ... only... Windows .. powerShell scripts
+Linux ... only... Windows .. PowerShell scripts
 
-Git/Gitlab/bitbucket ..  -- Application Run in a public or Private Cloud. End : Target Machine on which code would be running.
+Git/Gitlab/bitbucket ..  -- Application Run in a public or Private Cloud. End: Target Machine on which code would be running.
 
-Application .. Comp 1 -- works fine . Comp2 -- Will not work :
-     Parallel Thoughts in your brain.. P1 -- P2 -- P3  Same picture .. 
-     Computer .. Threads ... The ampunt free memoery avaibale  % CPU avaible changes the behaviour of the program. 
+Application .. Comp 1 -- works fine. Comp2 -- Will not work :
+     Parallel Thoughts in your brain. P1 -- P2 -- P3  Same picture. 
+     Computer .. Threads ... The amount of free memory available and % CPU available changes the behavior of the program. 
 
 
-1. Basic scripting  -- What ever we do in DevOps can be done with schell scripting also. ping.. netsat -- nslookup ..free .. df .. grep .. find..
-hostname .. ifconfig .. history .. wget ..systemctl
-2. Basic understanding of Operating system -- Memory management , Process management.
-3. Cloud  -- This is only way you can get infra dynamically.
-4. Ansible -- Configuratio
+1. Basic scripting  -- Whatever we do in DevOps can be done with shell scripting also. ping.. netstat -- nslookup ..free .. df .. grep .. find..
+hostname .. ipconfig .. history .. wget ..systemctl
+2. Basic understanding of Operating system -- Memory management, Process management.
+3. Cloud  -- This is the only way you can get infra dynamically.
+4. Ansible -- Configuration
 5. Terraform and Packer -- Images.
-6. Jenkins -- Build and shceduling.
-7. Automation --  Checkin - Build - Test - deploy - Run Test(Autoamtion) -- promote..-- 
-8. Python/Ruby -- Used for Test Automaiton and for Cloud Automation .. AWS -- python boto 3 
+6. Jenkins -- Build and scheduling.
+7. Automation --  Checkin - Build - Test - deploy - Run Test(Automation) -- promote..-- 
+8. Python/Ruby -- Used for Test Automation and for Cloud Automation .. AWS -- python boto 3 
 9. Docker / Kubernetes -- COntainer
 10. Git/Bitbucket.
 
 --- Jenkins 
-1. Java install .. Java is available .. Jenkins is Java application..
+1. Java install .. Java is available .. Jenkins is a Java application.
 ... java ... javac
 
 
 -------- 6/27 -----
 Jenkins -- jobs .. frequently used features...
 
-Check if Jenkins is running or not incase if you are unable to loginto Jnekins. 
-ps -ef | grep jenkins
+Check if Jenkins is running or not in case you are unable to log in to Jenkins. 
+ps -ef | grep Jenkins
 
-1. Scheduling .. tasks... Build .. Complication and packging the code.
-Scheduling .. runinning your task at what ever time.. everyday monring 5 am. 
+1. Scheduling .. tasks... Build .. Complication and packaging the code.
+Scheduling .. running your task at whatever time.. everyday morning at 5 am. 
 Command prompt like interface.. where you can give your os comMANDS.
 
 
------ IP and credentials..
+----- IP and credentials.
 One Job .. echo "Start"
 
 1.Clone the job I created into your own job.
    scheduling the build .. follow crontab syntax to build your crontab
-   github account .. create your won github account.
-   git clone https://github.com/munireddy/Webapp1.git  ..
+   Github account .. create your own GitHub account.
+   git clone https://github.com/munireddy/Webapp1.git.
 3.java program compilation...
-   1. download a Java HelloWorld program from inyernet.
+   1. download a Java HelloWorld program from the internet.
     Build steps .. ExecuteShell option. 
      1. javac <javaprogramname.java> .. build
      2. java javaprogramname         .. execute/run
@@ -78,40 +78,36 @@ One Job .. echo "Start"
 5. AWS plugin
 6.Docker plugin
 7.Pipeline
-8.Automatic trigering of build when source code is changed in git.
-9.Jenkins in master slave mode.
+8.Automatic triggering of the build when source code is changed in git.
+9.Jenkins in master-slave mode.
 ------------------------------------- Jenkins Plugin -----------
 EC2 plugin:
-   you have to write your ec2 cli command or a python program using boto 3 library. 
-    Run that progrma to create EC2 instance form your Jenkins job.
-Sonarcube .. install Sonarcune on your Jenkins machine or your buil dmachine and run sonar 
+   you have to write your ec2 CLI command or a python program using the boto 3 library. 
+    Run that program to create an EC2 instance from your Jenkins job.
+Sonarcube .. install Sonarcune on your Jenkins machine or your build machine and run sonar 
 Git Plugin .. Git address. branch from where you are cloning the code. 
 /var/lib/jenkins/workspace/jobname/file che cked out are created here.
 
-....... webhook .. this is needed to trigger jobs when ever a code checkin/push happens on git.
+....... webhook .. this is needed to trigger jobs whenever a code check-in/push happens on git.
 Make sure that none has access to the configure of the job.
 
-in jenkinsfile and get that file from your code repo like github.
+in Jenkins file and get that file from your code repo like GitHub.
 
-To make any changes to the Jenkins job .. you should have OCnfigure access to the job if your build steps are listed in th ejob itself.
-Putting build steps in the jenkins server is not a good practice.. Who ever has access to Jenkins configure can change the job. there is no recrod trail for that. 
-Best way is to keep your steps in a file and keep them in Repo like.
-To change a jnekins Job you need to click on "Configure"...
+To make any changes to the Jenkins job .. you should have OCnfigure access to the job if your build steps are listed in the job itself.
+Putting build steps in the Jenkins server is not a good practice. Whoever has access to Jenkins configure can change the job. there is no record trail for that. 
+The best way is to keep your steps in a file and keep them in Repo-like.
+To change a Jenkins Job you need to click on "Configure"...
 
 ---------------------------------
 1. cloning Job
-2. schduling jobs
+2. scheduling jobs
 3. Java/C++ try one job
 
 
 
----- for shcduling maintanace jobs...
-restart a Dev team mahcine... Sat Monring 3AM.
-Scheduled ( You know when to run.. there imporant tasks but not critical) Vs OnDemand( Importatn and Critical)....
-Code checkin.. they what the build to happen.. 
+---- for scheduling maintenance jobs...
+restart a Dev team machine... Sat Morning 3 AM.
+Scheduled ( You know when to run.. there important tasks but not critical) Vs OnDemand( Important and Critical)...
+Code checkin.. they what the build to happen. 
 
-How would you kill jnekins process through Linux command or script?....
- 
- 
-
-
+How would you kill Jenkins’s process? Through Linux command or script?....
