@@ -1,0 +1,13 @@
+1. Wrtie shell script to print the characters in orposition.
+    Input: IANMDEIRACBA
+    Output: INDIAB
+  Then reversver the output generated: BAIDNI
+  
+ 2. For the input file:  https://github.com/munireddy/setupInstructions/blob/master/Apachelogs
+    Generate output in the follwoing format:
+    
+    Ip  Adrres          Number of 400 LIke Errors
+    1.2.3.4                5
+    2.2.2.2                2
+    9.3.3.3                2
+    3.4.5.6                1   
