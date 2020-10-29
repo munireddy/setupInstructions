@@ -1,4 +1,4 @@
-1. Wrtie shell script to print the characters in orposition.
+1. Write shell script to print the characters in odd positions.
     Input: IANMDEIRACBA
     Output: INDIAB
   Then reversver the output generated: BAIDNI
