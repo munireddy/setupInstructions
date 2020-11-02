@@ -4,9 +4,9 @@
   Then reversver the output generated: BAIDNI
   
  2. For the input file:  https://github.com/munireddy/setupInstructions/blob/master/Apachelogs
-    Generate output in the follwoing format:
+    Generate output in the following format:
     
-    Ip  Adrres          Number of 400 LIke Errors
+    Ip  Adrres          Number of 400 Like Errors
     1.2.3.4                5
     2.2.2.2                2
     9.3.3.3                2
