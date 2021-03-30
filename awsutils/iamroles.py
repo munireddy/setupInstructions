@@ -14,9 +14,15 @@ for key in users['Users']:
     Policies = []
     Groups=[]
     result['userName']=key['UserName']
+    k1 = key['UserName']
     List_of_Policies =  client.list_user_policies(UserName=key['UserName'])
-
-    result['Policies'] = List_of_Policies['PolicyNames']
+    List_of_Policies1 =  client.list_attached_user_policies(UserName=key['UserName'])
+#    print(List_of_Policies1)
+    if not List_of_Policies1:
+        print("###############################################################################")
+        result['Policies'] = List_of_Policies['PolicyNames'] + List_of_Policies1['PolicyNames']
+    else:
+        result['Policies'] = List_of_Policies['PolicyNames']
 
     List_of_Groups =  client.list_groups_for_user(UserName=key['UserName'])
 
@@ -34,7 +40,8 @@ for key in users['Users']:
     print(result)
     for k,v in result.items():
         if v :
-            print(v)
+            #print(v)
+            pass
         else:
             result[k] = None
 
