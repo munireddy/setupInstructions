@@ -1,0 +1,22 @@
+Develop logic to process a given string as arithmetic expression.
+Sample input : "1 + 2 - 2 * 5"
+Sample output : 5
+
+-------
+
+Develop logic to return count of each word present in a file.
+
+Sample Input file:
+     If you have forgotten the password to your system’s root account, you don’t necessarily have to go back to square one and reinstall the whole operating system. 
+     It’s possible to recover and reset the root password, even without the old password. In this guide, we’ll take you through the step by step instructions of 
+     recovering a forgotten root password on Linux. 
+     This will work regardless of the Linux distribution you’re running, as long as its using the GRUB bootloader. Other bootloaders will have similar instructions.
+
+Sampel Output:
+    a: 1
+    as: 2
+    if: 1
+    step: 2
+    .....
+    
+    
