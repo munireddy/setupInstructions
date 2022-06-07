@@ -12,7 +12,7 @@ Sample Input file:
      recovering a forgotten root password on Linux. 
      This will work regardless of the Linux distribution you’re running, as long as its using the GRUB bootloader. Other bootloaders will have similar instructions.
 
-Sampel Output:
+Sample Output:
     a: 1
     as: 2
     if: 1
